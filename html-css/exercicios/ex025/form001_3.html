@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <title>Formulário</title>
+
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    
+    </head>
+    <body>
+        
+        <h1>Meu primeiro formulário</h1>
+
+        <!-- Por padrão o método quando não declarado é GET-->
+        <!-- <form action="cadastro.php" autocomplete="off"> -->
+        
+        <!-- <form action="arquivo_php_ficticio/cadastro.php" method="post" autocomplete="off"> -->
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p>
+                <label for="iNome">Nome: </label> 
+                <input type="text" name="nome" id="iNome" />
+            </p>
+            
+            <p>
+                <label for="iSobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="iSobrenome" />
+            </p>
+
+            <button type="submit">Enviar</button>
+            <!--
+                <p>
+                    <input type="submit" value="Enviar" />
+                </p>
+            -->
+        </form>
+
+    </body>
+</html>
