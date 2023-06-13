@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--  -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário</title>
+    </head>
+    <!--  -->
+    <body>
+        <h1>Teste de formulário</h1>
+
+        <form action="#" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sexo</legend>
+
+                <input type="radio" name="sexo" id="iMasc" value="M" checked/>
+                <label for="iMasc">Masculino</label>
+
+                <br />
+
+                <input type="radio" name="sexo" id="iFem" value="F" />
+                <label for="iFem">Feminino</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+
+                <input type="checkbox" name="esbas" id="iEsbas" />
+                <label for="iEsbas">Basquete</label>
+
+                <br />
+
+                <input type="checkbox" name="esfut" id="iEsfut" checked />
+                <label for="iEsfut">Futebol</label>
+
+                <br />
+
+                <input type="checkbox" name="esnat" id="iEsnat" />
+                <label for="iEsnat">Natação</label>
+
+                <br />
+
+                <input type="checkbox" name="esten" id="iEsten" />
+                <label for="iEsten">Tênis</label>
+            </fieldset>
+            
+            <p>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpar" />
+            </p>
+        </form>
+
+    </body>
+</html>
