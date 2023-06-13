@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--  -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário</title>
+    </head>
+    <!--  -->
+    <body>
+        <h1>Teste de formulário</h1>
+
+        <form action="#" method="post" autocomplete="on">
+            <p>
+                <label for="iCor">Cor: </label>
+                <input type="color" name="cor" id="iCor" value="#00ff00" />
+            </p>
+
+            <p>
+                <label for="iNivel">Nível de satisfação: </label>
+                <input type="range" name="nivel" id="iNivel" min="1" max="5" value="5" />
+                
+                <!-- 
+                    Nível enviado por padrão na query
+                        - mínimo = 0
+                        - médio = 50
+                        - máximo = 100
+                -->
+            </p>
+
+            <p>
+                <label for="iFoto">Foto de perfil: </label>
+                <input type="file" name="foto" id="iFoto" />
+
+                <!-- Para envio de arquivos utilizar o método POST -->
+            </p>
+            
+            <p>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpar" />
+            </p>
+        </form>
+
+    </body>
+</html>
