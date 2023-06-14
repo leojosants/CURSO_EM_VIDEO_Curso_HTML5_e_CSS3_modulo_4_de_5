@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* 
+    Typical Device Breakponts - Recomendação da W3C (https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp)
+    - - - - - - - - - - - - - - - - - - - - - - -
+    
+        - Extra small devices (phones, 600px and down)
+        - Small devices (portrait tablets and large phones, 600px and up)
+        - Medium devices (landscape tablets, 768px and up)
+        - Large devices (laptops/desktops, 992px and up)
+        - Extra large devices (large laptops and desktops, 1200px and up)
+
+*/
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    span#burguer { display: none; }
+
+    menu { display: block; }
+
+    menu > ul > li { display: inline-block; }
+
+    main { width: 768px; }
+}
