@@ -1,3 +1,28 @@
 @charset "UTF-8";
 
 /* Configurações gerais */
+
+* { margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --colorBlue: #0000ff;
+    --colorWhite: #ffffff;
+    --colorCEV1: #233eff;
+    --colorCEV2: #1526a7;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colorCEV1);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: var(--colorWhite);
+    text-shadow: 2px 2px 0px var(--colorCEV2);
+    padding: 10px;
+}
