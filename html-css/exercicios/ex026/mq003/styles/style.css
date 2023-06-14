@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* Configurações gerais */
+@media all {
+    * { 
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    :root {
+        --colorBlue: #0000ff;
+        --colorWhite: #ffffff;
+        --colorCEV1: #233eff;
+        --colorCEV2: #1526a7;
+    }
+    
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--colorCEV1);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    h1 {
+        color: var(--colorWhite);
+        text-shadow: 2px 2px 0px var(--colorCEV2);
+        padding: 10px;
+    }
+}
+
+/* Aparelho em pé --> (orientation: portrait) */
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url('../images/cev-portrait.jpg');
+        background-position: center bottom;
+    }
+}
+
+/* Aparelho deitado --> (orientation: landscape) */
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url('../images/cev-landscape.jpg');
+        background-position: left bottom;
+    }
+}
