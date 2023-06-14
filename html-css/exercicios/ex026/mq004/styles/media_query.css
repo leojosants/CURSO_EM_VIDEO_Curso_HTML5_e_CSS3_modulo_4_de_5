@@ -1,4 +1,76 @@
-@charset "UTF-8";
-
 /* Todas as demais mídias */
 
+@charset "UTF-8";
+
+/* 
+    Typical Device Breakponts - Recomendação da W3C (https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp)
+    - - - - - - - - - - - - - - - - - - - - - - -
+    
+        - Extra small devices (phones, 600px and down)
+        - Small devices (portrait tablets and large phones, 600px and up)
+        - Medium devices (landscape tablets, 768px and up)
+        - Large devices (laptops/desktops, 992px and up)
+        - Extra large devices (large laptops and desktops, 1200px and up)
+
+*/
+
+:root { --colorBlack: #000000; }
+
+/* Impressão */
+@media print {
+    body { 
+        /* background-image: url('../images/back-print.jpg'); - IMPRESSÃO NAO SE APLICA */
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid var(--colorBlack);
+    }
+
+    main::after {
+        content: 'Impressão realizada através do site tal...';
+        text-decoration: overline;
+    }
+    
+    main h1 {
+        text-shadow: none;
+        color: var(--colorBlack);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body { background-image: url('../images/back-tablet.jpg'); }
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    body { background-image: url('../images/back-pc.jpg'); }
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body { background-image: url('../images/back-tv.jpg'); }
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+}
